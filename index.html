@@ -1,13 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Fonts links -->
+    <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap" />
+    <!-- CSS file link -->
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
+
+<title>Fanatech Task</title>
+</head>
+
 <body>
-    <h1>Hello world</h1>
+    <header>
+        <!-- Navbar Start -->
+        <nav>
+            <div class="navbar lg:px-24 py-4 border-b-2 border-gray-200 text-lg font-medium">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>About Us</a></li>
+                            <li tabindex="0">
+                                <a>
+                                    EN
+                                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24">
+                                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                                    </svg>
+                                </a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>About Us</a></li>
+                            </li>
+                            <li><a><button class="login-brop-btn btn btn-sm text-white">Login</button></a>
+                            </li>
+                            <li><a><img class="w-12" src="Images/shopping-logo.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class=""><img src="Images/logo.png" alt=""></a>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                    <ul class="menu menu-horizontal">
+                        <li><a>Home</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>About Us</a></li>
+                        <li tabindex="0">
+                            <a>
+                                EN
+                                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 24 24">
+                                    <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                                </svg>
+                            </a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a><button
+                                    class="login-btn font-medium text-small text-white rounded-full">Login</button></a>
+                        </li>
+                        <li><a><img class="" src="Images/shopping-logo.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar end -->
+        <!-- -------------------- -->
+        <!-- Banner Start -->
+
+        <div class="banner relative overflow-hidden grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 items-center">
+            <img class="absolute w-72 h-72 left-0 top-20 animate-leaf z-10" src="Images/green leaf1.png" alt="">
+            <img src="Images/green leaf2.png"class="absolute w-72 h-72 right-0 top-20 animate-leaf2 z-10" alt="">
+            <div>
+              <div class="px-6 lg:px-24 z-20 relative">
+                <h1 class="hero-text text-3xl font-bold lg:text-6xl mt-24">Order food online from your
+                  favourite local restaurants
+                  <span class="hero-span">.</span>
+                </h1>
+                <p class="banner-p text-base font-semibold mt-6">Freshly made food delivered to your door.</p>
+                <div class="search-bar flex justify-between items-center">
+                  <div class="circle mr-4"></div>
+                  <p class="search-text font-medium txt-sm">Enter your location</p>
+                  <button class="btn-search font-medium"><i class="fas fa-search mr-2"></i>Search </button>
+                </div>
+              </div>
+            </div>
+            <div class="spin">
+                <img src="Images/hero-image.png" class="lg:pl-40 md:pl-20" alt="" />
+              </div>
+            
+          </div>
+    </header>
+    <section>
+        <div class="hero min-h-screen explore">
+            <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2">
+
+                <div class="pl-24 items-center">
+                    <h1 class="explore-heading font-bold">Explore your favourite city's food.</h1>
+                    <p class="explore-text font-normal text-lg py-3">Explore your favourite city's food.
+                        Lorem ipsum dolor sit amet consectetur. Ornare massa nunc nibh tristique. Non ligula tristique
+                        ut ut libero sit convallis maecenas. At egestas auctor porta mattis.</p>
+                    <button class="btn-explore">Explore <i class="fas fa-arrow-right text-white ml-2"></i>
+                    </button>
+                </div>
+                <div>
+                    <img src="Images/cycle-bg.png" class="min-w-sm " alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
