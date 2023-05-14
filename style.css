@@ -105,86 +105,146 @@ body {
 .explore {
     background-color: rgba(255, 139, 0, 0.05);
 }
-.cycle-bg{
+
+.cycle-bg {
     background-color: rgba(255, 139, 0, 0.05);
 }
+
 .animate-leaf {
     animation-name: move-leaf;
     animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-  }
-  @keyframes move-leaf {
+}
+
+@keyframes move-leaf {
     0% {
-      left: 0;
-      top: 0;
-      transform: scale(1) rotate(0deg);
+        left: 0;
+        top: 0;
+        transform: scale(1) rotate(0deg);
     }
+
     25% {
-      left: 50%;
-      top: 0%;
-      transform: scale(0.5) rotate(180deg);
+        left: 50%;
+        top: 0%;
+        transform: scale(0.5) rotate(180deg);
     }
+
     50% {
-      left: 110%;
-      top: 0;
-      transform: scale(1) rotate(360deg);
+        left: 110%;
+        top: 0;
+        transform: scale(1) rotate(360deg);
     }
+
     75% {
-      left: 50%;
-      top: 100%;
-      transform: scale(0.5) rotate(540deg);
+        left: 50%;
+        top: 100%;
+        transform: scale(0.5) rotate(540deg);
     }
+
     100% {
-      left: 0;
-      top: 0;
-      transform: scale(1) rotate(720deg);
+        left: 0;
+        top: 0;
+        transform: scale(1) rotate(720deg);
     }
-  }
+}
+
 .animate-leaf2 {
     animation-name: jump-leaf;
     animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-  }
-  @keyframes jump-leaf {
+}
+
+@keyframes jump-leaf {
     0% {
-      right: 0;
-      bottom: 0;
-      transform: scale(1) rotate(0deg);
+        right: 0;
+        bottom: 0;
+        transform: scale(1) rotate(0deg);
     }
+
     25% {
-      right: 50%;
-      bottom: 0%;
-      transform: scale(0.5) rotate(180deg);
+        right: 50%;
+        bottom: 0%;
+        transform: scale(0.5) rotate(180deg);
     }
+
     50% {
-      right: 110%;
-      bottom: 0;
-      transform: scale(1) rotate(360deg);
+        right: 110%;
+        bottom: 0;
+        transform: scale(1) rotate(360deg);
     }
+
     75% {
-      right: 50%;
-      bottom: 100%;
-      transform: scale(0.5) rotate(540deg);
+        right: 50%;
+        bottom: 100%;
+        transform: scale(0.5) rotate(540deg);
     }
+
     100% {
-      right: 0;
-      bottom: 0;
-      transform: scale(1) rotate(720deg);
+        right: 0;
+        bottom: 0;
+        transform: scale(1) rotate(720deg);
     }
-  }
-  .spin {
+}
+
+.spin {
     animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.amount {
+    color: #FF8B00;
+}
+
+.price-text {
+    font-size: 21px;
+    text-align: center;
+    color: #838383;
+}
+.cycle-container{
+    background-image: url(Images/cycle-bg.png)
+}
+
+.cycle {
+    position: relative;
+    animation: move-cycle 4s linear infinite;
   }
   
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
+  @keyframes move-cycle {
+    0% {
+      transform: translateX(0);
     }
-    to {
-      transform: rotate(360deg);
+    25% {
+      transform: translateX(-10%);
     }
+    50% {
+      transform: translateX(10%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .cycle-image {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .delivery-man {
+    position: absolute;
+    bottom: 0px; /* adjust as needed */
+    left: 0%;
+    transform: translateX(50%);
   }
   
   
